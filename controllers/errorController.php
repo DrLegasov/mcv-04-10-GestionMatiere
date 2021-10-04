@@ -15,8 +15,7 @@
 <div class="row mx-auto">
     <div class="col-md-12 mx-auto">
         <h1>Oups !</h1>
-        <img class="text-center" src="http://ekladata.com/jq_3o2dwfH6UzUtRDT4xhMR4rhA@150x135.jpg" alt="">
-        <h2>404 Page Introuvable</h2>
+        <img class="text-center" src="https://tse1.mm.bing.net/th?id=OIP.I-HKU3dnN3RPszctkKL7ngHaE0&pid=Api&P=0&w=246&h=161" alt="">
         <div class="my-3">
         <p style="font-size: large;">
             Oups, une erreur est survenue, la page demandée n'a pas été trouvée !

@@ -1,7 +1,8 @@
 
 <?php
 
-switch ($_GET['action']) {
+if(!empty($_GET['action'])):
+switch ($_GET ['action']) {
     case 'subjectsList':
         require('controllers/subjectController.php');
         break;
@@ -17,5 +18,16 @@ switch ($_GET['action']) {
     default:
         require('controllers/errorController.php');
 }
-
+endif;
 ?>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
