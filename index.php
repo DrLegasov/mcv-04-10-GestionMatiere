@@ -1,21 +1,21 @@
-Section TESTS
+
 <?php
 
-if(!empty($_GET['action']) && $_GET['action']=='subjectsList'):
-    require('controllers/subjectController.php');
-endif;
-
-if(!empty($_GET['action']) && $_GET['action']=='sessionsList'):
-    require('controllers/sessionsController.php');
-endif;
-
-if(!empty($_GET['action']) && $_GET['action']=='trainersList'):
-    require('controllers/trainersController.php');
-endif;
-
-if(!empty($_GET['action']) && $_GET['action']=='UsList'):
-    require('controllers/UsController.php');
-endif;
-
+switch ($_GET['action']) {
+    case 'subjectsList':
+        require('controllers/subjectController.php');
+        break;
+    case 'sessionsList':
+        require('controllers/sessionsController.php');
+        break;
+    case 'trainersList':
+        require('controllers/trainersController.php');
+        break;
+    case 'UsList':
+        require('controllers/UsController.php');
+        break;
+    default:
+        require('controllers/errorController.php');
+}
 
 ?>
