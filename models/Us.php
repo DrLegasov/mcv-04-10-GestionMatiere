@@ -6,6 +6,11 @@ public $firstname;
 public $lastname;
 public $birthYear;
 // déclaration des méthodes
+/**
+ * getListUs
+ *
+ * @return array
+ */
 public function getListUs() {
 
 

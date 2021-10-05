@@ -7,7 +7,7 @@ public $duration;
 public $description;
 // déclaration des méthodes
 /**
- * getListSubjet
+ * getListSubject
  *
  * @return void
  */

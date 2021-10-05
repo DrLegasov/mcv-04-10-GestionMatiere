@@ -7,6 +7,11 @@ public $startDate;
 public $finishDate;
 public $studiantNumber;
 // déclaration des méthodes
+/**
+ * getListSession
+ *
+ * @return array
+ */
 public function getListSession() {
 
 

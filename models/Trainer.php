@@ -6,6 +6,11 @@ public $firstname;
 public $lastname;
 public $society;
 // déclaration des méthodes
+/**
+ * getListTrainers
+ *
+ * @return array
+ */
 public function getListTrainers() {
 
 
@@ -15,7 +20,7 @@ public function getListTrainers() {
             "Prénom" => 'Delphine', 
             "Société" => 'EQUINOX'),
         array(
-            "Nom" => ' Pezet', 
+            "Nom" => ' PEZET', 
             "Prénom" => 'Pierre', 
             "Société" => 'GAIDO'),
         array(
