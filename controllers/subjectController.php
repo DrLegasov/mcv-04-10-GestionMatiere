@@ -1,8 +1,9 @@
 <?php
-require_once('models/MatClass.php');
 
-$oMatclass = new MatClass();
-$aSubject = $oMatclass->getListSubjet();
+require_once('models/Mat.php');
+
+$oMat = new Mat();
+$firstMultiTabMats = $oMat->getListSubjet();
 
 
 include('views/subjectList.php');

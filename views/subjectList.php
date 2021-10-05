@@ -15,7 +15,7 @@
     <main>
     <?php    
     $sTotal = 0;
-    foreach($Subjects as $Subject):
+    foreach($firstMultiTabMats as $Subject):
     ?>
         <li>
             <h2><?php echo $Subject['Nom']; ?></h2>
