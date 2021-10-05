@@ -2,6 +2,7 @@
 <?php
 
 if(!empty($_GET['action'])):
+    
 switch ($_GET ['action']) {
     case 'subjectsList':
         require('controllers/subjectController.php');
