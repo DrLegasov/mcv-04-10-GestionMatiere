@@ -7,7 +7,15 @@ public $lastname;
 public $society;
 // déclaration des méthodes
 
-public function __construct() {
+/**
+ * __construct
+ *
+ * @param  string $firstname
+ * @param  string $lastname
+ * @param  string $society
+ * @return array
+ */
+public function __construct($firstname, $lastname, $society) {
         $this->firstname = $firstname;
         $this->lastname = $lastname;
         $this->society = $society;

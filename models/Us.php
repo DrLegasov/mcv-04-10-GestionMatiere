@@ -7,7 +7,15 @@ public $lastname;
 public $birthYear;
 // déclaration des méthodes
 
-public function __construct() {
+/**
+ * __construct
+ *
+ * @param  string $firstname
+ * @param  string $lastname
+ * @param  string $birthYear
+ * @return array
+ */
+public function __construct($firstname, $lastname, $birthYear) {
         $this->firstname = $firstname;
         $this->lastname = $lastname;
         $this->birthYear = $birthYear;
@@ -19,7 +27,7 @@ public function __construct() {
  * @return string
  */
 public function getfirstname() {
-    return $this->firstname;
+    return $this->$firstname;
 }
 /**
  * getname
@@ -27,7 +35,7 @@ public function getfirstname() {
  * @return string
  */
 public function getlastname() {
-    return $this->lastname;
+    return $this->$lastname;
 }
 /**
  * getname
@@ -35,7 +43,7 @@ public function getlastname() {
  * @return string
  */
 public function getbirthYear() {
-    return $this->birthYear;
+    return $this->$birthYear;
 }
 
 /**

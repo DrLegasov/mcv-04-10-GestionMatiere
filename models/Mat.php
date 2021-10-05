@@ -6,7 +6,17 @@ public $name;
 public $duration;
 public $description;
 // déclaration des méthodes
-public function __construct() {
+
+
+/**
+ * __construct
+ *
+ * @param  string $name
+ * @param  int $duration
+ * @param  string $description
+ * @return array
+ */
+public function __construct($name, $duration, $description) {
 
         $this->name = $name;
         $this->duration = $duration;

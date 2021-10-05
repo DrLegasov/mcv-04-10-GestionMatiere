@@ -9,7 +9,16 @@ public $studiantNumber;
 
 // déclaration des méthodes
 
-public function __construct() {
+/**
+ * __construct
+ *
+ * @param  string $name
+ * @param  string $startDate
+ * @param  string $finishDate
+ * @param  int $studiantNumber
+ * @return void
+ */
+public function __construct($name, $startDate, $finishDate, $studiantNumber) {
 
         $this->name = $name;
         $this->startDate = $startDate;
