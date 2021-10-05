@@ -6,6 +6,67 @@ public $firstname;
 public $lastname;
 public $society;
 // déclaration des méthodes
+
+public function __construct() {
+        $this->firstname = $firstname;
+        $this->lastname = $lastname;
+        $this->society = $society;
+
+}
+/**
+ * getname
+ *
+ * @return string
+ */
+public function getfirstname() {
+    return $this->firstname;
+}
+/**
+ * getname
+ *
+ * @return string
+ */
+public function getlastname() {
+    return $this->lastname;
+}
+/**
+ * getname
+ *
+ * @return string
+ */
+public function getsociety() {
+    return $this->society;
+}
+
+
+/**
+ * setname
+ *
+ * @param  string $name
+ * @return string
+ */
+public function setfirstname($firstname) {
+    $this->firstname = $firstname;
+}
+/**
+ * setname
+ *
+ * @param  string $name
+ * @return string
+ */
+public function setlastname($lastname) {
+    $this->lastname = $lastname;
+}
+/**
+ * setname
+ *
+ * @param  string $name
+ * @return string
+ */
+public function setsociety($society) {
+    $this->society = $society;
+}
+
 /**
  * getListTrainers
  *

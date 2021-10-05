@@ -6,7 +6,90 @@ public $name;
 public $startDate;
 public $finishDate;
 public $studiantNumber;
+
 // déclaration des méthodes
+
+public function __construct() {
+
+        $this->name = $name;
+        $this->startDate = $startDate;
+        $this->finishDate = $finishDate;
+        $this->studiantNumber = $studiantNumber;
+}
+
+/**
+ * getname
+ *
+ * @return string
+ */
+public function getname() {
+    return $this->name;
+}
+/**
+ * getstartdate
+ *
+ * @return string
+ */
+public function getstartdate() {
+    return $this->startgetstartdate;
+}
+/**
+ * getfinishdate
+ *
+ * @return string
+ */
+public function getfinishdate() {
+    return $this->finisgetfinishdate;
+}
+/**
+ * getstudiantNumber
+ *
+ * @return oint
+ */
+public function getstudiantNumber() {
+    return $this->studigetstudiantNumber;
+}
+
+
+
+/**
+ * setname
+ *
+ * @param  string $name
+ * @return string
+ */
+public function setname($name) {
+    $this->name = $name;
+}
+/**
+ * setstartdate
+ *
+ * @param  string $startDate
+ * @return string
+ */
+public function setstartdate($startDate) {
+    $this->startgetstartdate = $startgetstartdate;
+}
+/**
+ * setfinishdate
+ *
+ * @param  string $finishDate
+ * @return string
+ */
+public function setfinishdate($finishDate) {
+    $this->finigetfinishdate = $finigetfinishdate;
+}
+/**
+ * setstudiantNumber
+ *
+ * @param  int $studiantNumber
+ * @return int
+ */
+public function setstudiantNumber($studiantNumber) {
+    $this->studigetstudiantNumber = $studigetstudiantNumber;
+}
+
+
 /**
  * getListSession
  *
