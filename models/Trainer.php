@@ -80,27 +80,35 @@ public function setsociety($society) {
  *
  * @return array
  */
+
+public function addToList(&$Trainers){
+    array_push($Trainers, $this);
+}
+
+
+
 public function getListTrainers() {
 
 
     $Trainers = array(
-        array(
-            "Nom" => ' DAVIGO', 
-            "Prénom" => 'Delphine', 
-            "Société" => 'EQUINOX'),
-        array(
-            "Nom" => ' PEZET', 
-            "Prénom" => 'Pierre', 
-            "Société" => 'GAIDO'),
-        array(
-            "Nom" => ' CHEVALIER', 
-            "Prénom" => 'Thomas', 
-            "Société" => 'Angular & Co'),
-        array(
-            "Nom" => ' PONCIN', 
-            "Prénom" => 'Cindy', 
-            "Société" => 'Kyū Solution')
-    );
+                        array(
+                            "Nom" => ' DAVIGO', 
+                            "Prénom" => 'Delphine', 
+                            "Société" => 'EQUINOX'),
+                        array(
+                            "Nom" => ' PEZET', 
+                            "Prénom" => 'Pierre', 
+                            "Société" => 'GAIDO'),
+                        array(
+                            "Nom" => ' CHEVALIER', 
+                            "Prénom" => 'Thomas', 
+                            "Société" => 'Angular & Co'),
+                        array(
+                            "Nom" => ' PONCIN', 
+                            "Prénom" => 'Cindy', 
+                            "Société" => 'Kyū Solution')
+                        );
+
                 return $Trainers;        
 }
 }

@@ -81,6 +81,11 @@ public function setdescription($description) {
  *
  * @return void
  */
+
+public function addToList(&$firstMultiTabMats){
+    array_push($firstMultiTabMats, $this);
+
+}
 public function getListSubjet() {
 
     $firstMultiTabMats = array(
@@ -136,4 +141,4 @@ public function getListSubjet() {
         return $firstMultiTabMats;
 }
 }
-?>
+?>  

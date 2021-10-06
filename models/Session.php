@@ -99,6 +99,10 @@ public function setstudiantNumber($studiantNumber) {
 }
 
 
+public function addToList(&$Sessions){
+    array_push($Sessions, $this);
+}
+
 /**
  * getListSession
  *

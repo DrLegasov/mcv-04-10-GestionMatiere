@@ -80,6 +80,12 @@ public function setsociety($society) {
  *
  * @return array
  */
+
+public function addToList(&$Us){
+    array_push($Us, $this);
+}
+
+
 public function getListUs() {
 
 
