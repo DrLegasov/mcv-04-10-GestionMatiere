@@ -16,15 +16,11 @@
     <?php    
     foreach($Trainers as $Trainer):
     ?>
-        <li>
             <h2><?php echo $Trainer['Nom']; ?></h2>
-            <ul>
-                <li> <?php echo $Trainer['Prénom']; ?></li>
-            </ul>
-
-            <p><?php echo $Trainer['Société']; ?></p>
-        </li>
-
+            <p><?php echo $Trainer['Prénom']; ?></p>
+            <p><?php echo $Trainer['Société']; ?></p>        
+        <button class="btn btn-outline-warning my-2 mx-1 accordion-collapse collapse show">ÉDITER</button>
+        <button class="btn btn-outline-danger my-2 mx-1 accordion-collapse collapse show">SUPPRIMER</button><br><hr>
         <?php
        // $sTotal = sTotal + $matiere['Durée'];
     endforeach;
