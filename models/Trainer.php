@@ -81,11 +81,26 @@ public function setsociety($society) {
  * @return array
  */
 
+/**
+ * addToList
+ *
+ * @param  mixed $Trainers
+ * @return void
+ */
 public function addToList(&$Trainers){
     array_push($Trainers, $this);
 }
 
-
+/**
+ * deleteToList supprimer un objet
+ *
+ * @param   array$Trainers
+ * @return void
+ */
+public function deleteToList(&$Trainers){
+    $index = array_search($this, $Trainers);
+    unset($Trainers[$index]);
+}
 
 public function getListTrainers() {
 

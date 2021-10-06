@@ -82,10 +82,31 @@ public function setdescription($description) {
  * @return void
  */
 
+/**
+ * addToList ajout d'un objet
+ *
+ * @param  mixed $firstMultiTabMats
+ * @return void
+ */
 public function addToList(&$firstMultiTabMats){
     array_push($firstMultiTabMats, $this);
-
 }
+
+/**
+ * deleteToList supprimer un objet
+ *
+ * @param   array$firstMultiTabMat
+ * @return void
+ */
+public function deleteToList(&$firstMultiTabMat){
+    $index = array_search($this, $firstMultiTabMat);
+    unset($firstMultiTabMat[$index]);
+}
+
+public function printTabList($firstMultiTabMat) {
+    array_values($firstMultiTabMat);
+}
+
 public function getListSubjet() {
 
     $firstMultiTabMats = array(

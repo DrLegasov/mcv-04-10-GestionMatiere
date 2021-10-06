@@ -15,6 +15,9 @@ $oPain->addToList($Trainers);
 $oHope = new Trainer('error', 'LIFE', 'EARTH');
 $oHope->addToList($Trainers);
 
+/* appel de la méthode pour supprimer
+un objet du tableau d'objet */
+$oHope->deleteToList($Trainers);
 
 
 $Trainers = $oTrainer->getListTrainers();

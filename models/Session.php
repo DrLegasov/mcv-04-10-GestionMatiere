@@ -99,9 +99,27 @@ public function setstudiantNumber($studiantNumber) {
 }
 
 
+/**
+ * addToList ajout d'un objet
+ *
+ * @param  array $Sessions
+ * @return array
+ */
 public function addToList(&$Sessions){
     array_push($Sessions, $this);
 }
+
+/**
+ * deleteToList supprimer un objet
+ *
+ * @param   array$Sessions
+ * @return void
+ */
+public function deleteToList(&$Sessions){
+    $index = array_search($this, $Sessions);
+    unset($Sessions[$index]);
+}
+
 
 /**
  * getListSession

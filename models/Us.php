@@ -85,6 +85,17 @@ public function addToList(&$Us){
     array_push($Us, $this);
 }
 
+/**
+ * deleteToList supprimer un objet
+ *
+ * @param   array$Us
+ * @return void
+ */
+public function deleteToList(&$Us){
+    $index = array_search($this, $Us);
+    unset($Us[$index]);
+}
+
 
 public function getListUs() {
 
