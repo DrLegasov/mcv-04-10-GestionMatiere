@@ -97,6 +97,33 @@ public function deleteToList(&$Us){
 }
 
 
+/**
+ * updateList
+ *
+ * @param  array $Us
+ * @param  string $firstname
+ * @param  string $lastname
+ * @param  string $birthYear
+ * @return object
+ */
+public function updateList ($Us, $firstname='', $lastname='', $birthYear='') {
+    $index = array_search($this, $Us);
+
+    if(!empty($firstname)):
+        $Us[index]->firstname = $firstname;
+    endif;
+    
+    if(!empty($lastname)):
+        $Us[index]->lastname =$lastname;
+    endif;
+    
+    if(!empty($birthYear)):
+        $Us[index]->birthYear =$birthYear;
+    endif;
+
+}
+
+
 public function getListUs() {
 
 

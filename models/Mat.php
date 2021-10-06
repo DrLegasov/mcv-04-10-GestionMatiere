@@ -79,14 +79,14 @@ public function setdescription($description) {
 /**
  * getListSubject
  *
- * @return void
+ * @return object
  */
 
 /**
  * addToList ajout d'un objet
  *
  * @param  mixed $firstMultiTabMats
- * @return void
+ * @return object
  */
 public function addToList(&$firstMultiTabMats){
     array_push($firstMultiTabMats, $this);
@@ -96,16 +96,51 @@ public function addToList(&$firstMultiTabMats){
  * deleteToList supprimer un objet
  *
  * @param   array$firstMultiTabMat
- * @return void
+ * @return object
  */
-public function deleteToList(&$firstMultiTabMat){
-    $index = array_search($this, $firstMultiTabMat);
-    unset($firstMultiTabMat[$index]);
+public function deleteToList(&$firstMultiTabMats){
+    $index = array_search($this, $firstMultiTabMats);
+    unset($firstMultiTabMats[$index]);
 }
 
-public function printTabList($firstMultiTabMat) {
-    array_values($firstMultiTabMat);
+/**
+ * updateList
+ *
+ * @param  array $firstMultiTabMats
+ * @param  string $name
+ * @param  string $duration
+ * @param  string $description
+ * @return object
+ */
+public function updateList ($firstMultiTabMats, $name='', $duration='', $description='') {
+    $index = array_search($this, $firstMultiTabMats);
+
+    if(!empty($name)):
+        $firstMultiTabMats[$index]->name = $name;
+    endif;
+    
+    if(!empty($duration)):
+        $firstMultiTabMats[$index]->duration = $duration;
+    endif;
+    
+    if(!empty($description)):
+        $firstMultiTabMats[$index]->description = $description;
+    endif;
+
 }
+
+
+
+public function printTabList(&$firstMultiTabMats) {
+    array_values($firstMultiTabMats);
+}
+
+/*
+public function getListSubjet($firsMultiTabMat) {
+    return $firstMultiTabMat;
+}
+*/
+
 
 public function getListSubjet() {
 
@@ -162,4 +197,4 @@ public function getListSubjet() {
         return $firstMultiTabMats;
 }
 }
-?>  
+?>

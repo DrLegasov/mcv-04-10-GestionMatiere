@@ -102,6 +102,32 @@ public function deleteToList(&$Trainers){
     unset($Trainers[$index]);
 }
 
+/**
+ * updateList
+ *
+ * @param  array $Trainers
+ * @param  string $firstname
+ * @param  string $lastname
+ * @param  string $birthYear
+ * @return object
+ */
+public function updateList ($Trainers, $firstname='', $lastname='', $society='') {
+    $index = array_search($this, $Us);
+
+    if(!empty($firstname)):
+        $Trainers[index]->firstname = $firstname;
+    endif;
+    
+    if(!empty($lastname)):
+        $Trainers[index]->lastname =$lastname;
+    endif;
+    
+    if(!empty($society)):
+        $Trainers[index]->society =$society;
+    endif;
+
+}
+
 public function getListTrainers() {
 
 

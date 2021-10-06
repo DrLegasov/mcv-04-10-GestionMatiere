@@ -34,9 +34,9 @@ $oPlaf->deleteToList($firstMultiTabMats);
 $oPlif->deleteToList($firstMultiTabMats);
 $oPlouf->deleteToList($firstMultiTabMats);
 
-var_dump($firstMultiTabMats);
 
-$oPlaf->printTabList($firstMultiTabMats);
+$oGraou->updateList($firstMultiTabMats,'' ,'', 'EARTH44');
+//$oPlaf->printTabList($firstMultiTabMats);
 
 $firstMultiTabMats = $oMat->getListSubjet();
 include('views/subjectList.php');

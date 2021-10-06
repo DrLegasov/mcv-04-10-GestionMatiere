@@ -121,6 +121,28 @@ public function deleteToList(&$Sessions){
 }
 
 
+
+public function updateList ($Sessions, $name='', $startDate='', $finishDate='', $studiantNumber='') {
+    $index = array_search($this, $Us);
+
+    if(!empty($firstname)):
+        $Sessions[index]->firstname = $firstname;
+    endif;
+    
+    if(!empty($startDate)):
+        $Sessions[index]->startDate =$startDate;
+    endif;
+    
+    if(!empty($FinishDate)):
+        $Sessions[index]->FinishDate =$FinishDate;
+    endif;
+    
+    if(!empty($studiantNumber)):
+        $Sessions[index]->studiantNumber =$studiantNumber;
+    endif;
+}
+
+
 /**
  * getListSession
  *
