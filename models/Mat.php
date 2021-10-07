@@ -142,6 +142,45 @@ public function getListSubjet($firsMultiTabMat) {
 */
 
 
+/* Method getListSubjectByIndex
+*
+* @param int $index index dans le tableau
+*
+* @return object
+*/
+/*
+public function getListSubjectByIndex($aSubjects,$index){
+
+return  $aSubjects[$index];
+}
+/*
+/**
+ * updateListByIndex
+ *
+ * @param  array $aSubjects
+ * @param  int $index
+ * @param  string $name
+ * @param  string $description
+ * @param  int $duration
+ * @return object
+ */
+/*public function updateListByIndex(&$aSubjects, $index, $name='', $description='', $duration=''){
+
+    if(!empty($name)):
+        $aSubjects[$index]->name = $name;
+    endif;
+
+    if(!empty($description)):
+        $aSubjects[$index]->description = $description;
+    endif;
+
+    if(!empty($duration)):
+        $aSubjects[$index]->duration = $duration;
+    endif;
+}  
+ */
+
+
 public function getListSubjet() {
 
     $firstMultiTabMats = array(

@@ -14,8 +14,8 @@
             <p>  Durée <?php echo $Subject['Durée']; ?></p>       
             <p><?php echo $Subject['Description']; ?></p>
             <hr>
-            <button class="btn btn-outline-warning my-2 mx-1 w-20">ÉDITER</button>
-            <button class="btn btn-outline-danger my-2 mx-1 w-20">SUPPRIMER</button><br><hr>
+            <a href=""><button class="btn btn-outline-warning my-2 mx-1 accordion-collapse collapse show">ÉDITER</button></a>
+        <a href=""><button class="btn btn-outline-danger my-2 mx-1 accordion-collapse collapse show">SUPPRIMER</button></a><br><hr>
         <?php
        // $sTotal = sTotal + $matiere['Durée'];
         $sTotal += $Subject['Durée'];        

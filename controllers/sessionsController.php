@@ -10,7 +10,7 @@ $oSession->addToList($Sessions);
 $oNewDw = new Session('DWW-Bush','0000','0000','666');
 $oNewDw->addToList($Sessions);
 
-$oAddTrump = new Session('IDIOCRATY','0000','0000','1');
+$oAddTrump = new Session('IDIOCRATY','0000','0000','999');
 $oAddTrump->addToList($Sessions);
 
 /*appel de la fonction du model 

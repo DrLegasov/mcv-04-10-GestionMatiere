@@ -15,8 +15,8 @@
             <p><?php echo $Session['Nombre d\'Apprenants']; ?></p>
             <?php ?>
             <hr>
-            <button class="btn btn-outline-warning my-2 mx-1 w-20">ÉDITER</button>
-            <button class="btn btn-outline-danger my-2 mx-1 w-20">SUPPRIMER</button><br><hr>
+            <a href=""><button class="btn btn-outline-warning my-2 mx-1 accordion-collapse collapse show">ÉDITER</button></a>
+        <a href=""><button class="btn btn-outline-danger my-2 mx-1 accordion-collapse collapse show">SUPPRIMER</button></a><br><hr>
             <?php
        // $sTotal = sTotal + $matiere['Durée'];
         endforeach;
